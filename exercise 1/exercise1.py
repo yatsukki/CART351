@@ -119,7 +119,7 @@ print("Expected output: p")
 # Task 9: Modify the value assigned to variable "offset" below so that
 # the following "print" statement displays the letter "p".
 
-offset = 0
+offset = 2
 print("apple"[offset])
 
 #------------------------------------------------------------------------
@@ -131,8 +131,8 @@ print("Expected output: jump")
 # Task 10: Modify the values assigned to variables "start" and "end"
 # below so that the following "print" statement displays the word "jump".
 
-start = 0
-end = 10
+start = 12
+end = 16
 aStringSentenceAgain = "Did the cat jump out the window yesterday?"
 print(aStringSentenceAgain[start:end])
 
@@ -145,7 +145,7 @@ print("Expected output: 100")
 # Task 11: Modify the statement below so that it displays the number 100.
 # Do this using the int() function (hint: you need to use it twice).
 
-print("19" + "81")
+print(int("19") + int("81"))
 #------------------------------------------------------------------------
 
 print("\n------")
@@ -155,7 +155,7 @@ print("Expected output: test_var is less than 200")
 # Task 12: Modify the code below to include a condition to print the statement  
 # 'test_var is less than 200' for the current value of test_var. 
 # Do not change the intial code, rather add to it
-test_var = 90
+test_var = 999
 if test_var > 200:	
 	print("test_var is greater than 200!")
 #------------------------------------------------------------------------
@@ -168,7 +168,7 @@ print("Expected output: the condition test passed")
 # 'the condition test passed'. Do not change the values of the varaibles.
 test_var_three = 400
 test_var_two = 800
-if test_var_three > 200 and test_var_two < 400:	
+if test_var_three > 200 and test_var_two > 400:	
 	print("the condition test passed")
 else:
 	print("the condition test not passed")
@@ -183,7 +183,7 @@ print("Expected output: alpha")
 # that it prints "alpha" (instead of "beta").
 
 greek = ["alpha", "beta", "gamma", "delta", "epsilon"]
-print(greek[1])
+print(greek[0])
 
 #------------------------------------------------------------------------
 
@@ -195,8 +195,8 @@ print("Expected output: ['beta', 'gamma', 'delta']")
 # the print statement displays the second through fourth items in the list
 # "greek" (defined above).
 
-start = 0
-finish = 6
+start = 1
+finish = 4
 print(greek[start:finish])
 
 #------------------------------------------------------------------------
@@ -209,7 +209,7 @@ print("Expected output: ['delta', 'epsilon']")
 # statement displays the last two members of the list "greek" (defined above).
 # Use a negative number for "foo".
 
-foo = 0
+foo = - 2
 print(greek[foo:])
 
 #------------------------------------------------------------------------
@@ -222,7 +222,7 @@ print("Expected output: True")
 # that the print statement displays "True."
 
 vegetables= ["aubergines", "carrots", "turnips", "fiddleheads", "artichokes"]
-word_to_look_for = "carret"
+word_to_look_for = "carrots"
 print(word_to_look_for in vegetables)
 
 #------------------------------------------------------------------------
@@ -235,7 +235,7 @@ print("Expected output: ['artichokes', 'aubergines', 'carrots', 'fiddleheads', '
 # the list "vegetables" (defined above) in alphabetical order. (Use the "sort"
 # function.
 
-print(vegetables)
+print(vegetables.sort())
 
 #------------------------------------------------------------------------
 
@@ -248,7 +248,7 @@ print("Expected output: ['artichokes', 'aubergines', 'carrots', 'fiddleheads', '
 # list.
 
 # write your statement here
-print(vegetables)
+print(vegetables.append("radishes"))
 
 #------------------------------------------------------------------------
 
@@ -266,7 +266,8 @@ print("  radishes")
 # "vegetables" (defined above). (The list should contain the item that you
 # added to the list in task 17.)
 
-
+for vegetable in vegetables:
+    print(vegetable)
 
 
 #------------------------------------------------------------------------
@@ -286,7 +287,8 @@ print("  Radishes")
 # "vegetables" (defined above), but with the first letter of each item capitalized.
 # (The list should contain the item that you added to the list in task 17.)
 
-
+for vegetable in vegetables:
+	print(vegetable.capitalize())
 
 
 #------------------------------------------------------------------------
@@ -302,8 +304,8 @@ print("  9-18-25")
 # statement displays "9-18-25".
 
 
-separator = "?"
-glue = "?"
+separator = "/"
+glue = "-"
 parts = "9/18/25".split(separator)
 print(parts[-1])
 print(glue.join(parts))

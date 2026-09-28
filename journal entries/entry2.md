@@ -1,0 +1,2 @@
+#Entry 2
+Today we learned how to properly set up a virtual environment and some basic python commands, turns out python is way less confusing than javascript which is something I appreciate immensely. We got to finally see how the terminal window works, now I can finally understand what these youtube tutorials are on about.

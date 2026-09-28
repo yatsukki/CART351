@@ -42,8 +42,8 @@ a_num_variable = 17
 print(a_num_variable)
 
 #------------------------------------------------------------------------
-
-print("\n------")
+n=54
+print(f"{n}")
 print("Task 4: Types")
 print("Expected output: ")
 
@@ -54,7 +54,7 @@ print("Expected output: ")
 x = 14
 y = 17.4
 z = "today is a fine day for sailing!"
-print(type(None))
+print(type(z))
 
 #------------------------------------------------------------------------
 
@@ -69,7 +69,7 @@ print("Expected output: 51")
 
 first_line = "It was the best of times."
 second_line = "It was the worst of times."
-print() # your code here!
+print(len(first_line) + len(second_line)) # your code here!
 
 #------------------------------------------------------------------------
 
@@ -82,7 +82,7 @@ print("Expected output: 25")
 # called "aStringSentence." Use the .find() method.
 
 aStringSentence = "Did the cat jump out the window yesterday?"
-print() # your code here!
+print(aStringSentence.find("window")) # your code here!
 
 #------------------------------------------------------------------------
 
@@ -95,7 +95,7 @@ print("Expected output: someone who has spent too much time")
 # the beginning and end of the string. Use the .strip() method.
 
 partLy = "     someone who has spent too much time    \n"
-print(partLy)
+print(partLy.strip())
 
 #------------------------------------------------------------------------
 
@@ -108,7 +108,7 @@ print("Expected output: SOMEONE WHO HAS SPENT TOO MUCH TIME")
 # the string, with all whitespace removed, and with all letters converted to
 # uppercase. Use the .upper() method.
 
-print() # your code here!
+print((partLy.strip()).upper()) # your code here!
 
 #------------------------------------------------------------------------
 

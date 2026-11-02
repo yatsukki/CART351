@@ -35,6 +35,17 @@ def index():
 def register():
      return render_template("register.html")
 
+@app.route("/cat/<kitty>")
+def cat(kitty):
+    last_letter = kitty[-1]
+    newName = kitty + "y"
+    if last_letter != "y":
+        return f"Your new name is {newName}"
+    return f"Hello, {kitty}!the last letter of the kitty name is {last_letter}"
+
+    
+    
+
 @app.route("/reg_thank_you",methods = ['POST', 'GET'])
 def reg_thank_you():
     app.logger.info(request.form["f_name"])

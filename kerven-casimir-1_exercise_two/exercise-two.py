@@ -16,9 +16,20 @@ def t1():
 #*************************************************
 @app.route("/getSearchCriteria")
 def getSearchCriteria():
+    
     #fill me in :
     #replace the empty space to be url encoded
-    imgFromNasa = imgFromNasa.replace(' ', '%20')
+    imgNasa = "https://images-api.nasa.gov/search?q=" #api link
+    app.logger.info(request.args) #grab the search criteria from the form
+    userInput = request.args.get("search")
+    imgFromNasa = imgNasa + userInput
+
+    apiImage = imgNasa + userInput + "&media_type=image"
+    response = requests.get(apiImage)
+    data = response.json()
+    description = data['collection']['items'][0]['data'][0]['description'] #grabs first description in list
+    imgFromNasa = data['collection']['items'][0]['links'][0]['href'] #grabs first pic in list
+
     return render_template("t1.html",
                               have_results = True,
                               description=description,

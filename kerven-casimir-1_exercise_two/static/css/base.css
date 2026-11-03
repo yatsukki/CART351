@@ -4,19 +4,19 @@
 }
 
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Helvetica", sans-serif;
    
 }
 h2{
 
     font-size:32px;
     padding:5px;
-    background-color:rgb(14, 181, 232);
-    color: rgb(255,255,255);
+    background-color:rgb(239, 236, 235);
+    color: rgb(5, 5, 5);
 }
 nav{
     padding-bottom:5px;
-    background-color:rgb(14, 181, 232);
+    background-color:rgb(239, 236, 235);
 }
 nav ul{
     display:flex;
@@ -33,27 +33,60 @@ nav ul li{
 }
 nav li a{
 text-decoration: none;
-color:rgb(255, 255, 255);
+color:rgb(0, 0, 0);
 }
 
 main{
     margin: 10px;
-     background-color: rgb(229, 236, 245);
+    padding: 50px;
+    background-color:rgb(239, 236, 235);
      min-height:calc(82vh);
 }
 
 footer{
-     background-color:rgb(14, 181, 232);
+     background-color:rgb(239, 236, 235);
        min-height:5vh;
        padding:5px;
-       color: rgb(255,255,255);
+       color: rgb(0, 0, 0);
 
 }
-
+.mainSection{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:30px;
+    margin-top:10px;
+}
 #searchButton{
 
     color: rgb(1, 1, 1);
     padding: 10px;
     margin-top: 10px;
+    border-radius: 0px;
+    border: 1px solid rgb(0, 0, 0);
 }
 
+#searchCriteria{
+    color: rgb(1, 1, 1);
+    margin-top: 10px;
+    border-radius: 0px;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.stupidImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imageContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    gap:10px;
+}
+fieldset{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin-top: 10px;
+}

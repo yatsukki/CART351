@@ -25,10 +25,10 @@ def index():
 @app.route ("/scammed")
 def scammed():
     # check if user exists inside session
-    if "user" in session:
+    if "user" in session and "password" in session:
         user = session["user"]
-        pwd = session["password"]
-        return f"<h1>Hello {user}!! you've been scammed lmao we know that your password is {pwd}, send us $5 billion dollars or we leak your info</h1>"
+        password = session["password"]
+        return f"<h1>Hello {user}!! you've been scammed lmao we know that your password is {password}, send us $5 billion dollars or we leak your info</h1>"
     else:
         return redirect(url_for("login"))
 

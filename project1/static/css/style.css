@@ -1,0 +1,29 @@
+header {
+   display: flex;
+   border-width: 1px;
+   border-color: black;
+   border-style: solid;
+}
+.logoContainer{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 15px;
+    display: inline-block;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.logo_image{
+    height: 30px;
+}
+
+a{
+    color: black;
+}

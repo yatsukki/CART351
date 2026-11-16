@@ -4,7 +4,7 @@
 }
 
 body {
-  background: rgb(191, 246, 255);
+  background: rgb(240, 238, 226);
   font-family: "Roboto", sans-serif;
 }
 
@@ -13,22 +13,24 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  color: rgb(191, 246, 255);
+  color: rgb(80, 70, 67);
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 10px;
-  background-color: rgb(232, 178, 233);
+  background-color: rgba(255, 255, 255, 0);
 }
 nav ul {
   display: flex;
-  justify-content: right;
-  background-color: rgb(217, 55, 220);
+  justify-content: left;
+  background-color: rgb(226, 226, 226);
   padding-top: 10px;
+  padding-left: 20px;
   padding-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
 }
 nav ul li {
+  
   width: 10%;
   text-transform: uppercase;
   text-decoration: none;
@@ -36,12 +38,12 @@ nav ul li {
 }
 nav li a {
   text-decoration: none;
-  color: rgb(191, 246, 255);
+  color: rgb(37, 37, 37);
 }
 main {
   margin: 10px;
   margin-bottom: 0;
-  background-color: rgb(229, 243, 245);
+  background-color: rgb(235, 225, 222);
   min-height: calc(90vh - 5vh - 100px);
 }
 .flex-intro {
@@ -65,32 +67,32 @@ main {
 .dict_key,
 .dict_value {
   padding: 2px;
-  background-color: rgb(240, 158, 242);
-  color: white;
+  background-color: rgb(0, 0, 0);
+  
 }
 
 footer {
-  background-color: rgb(217, 55, 220);
+  background-color: rgb(253, 251, 235);
   min-height: 5vh;
   margin-left: 10px;
   margin-right: 10px;
   padding: 10px;
-  color: rgb(191, 246, 255);
+  
 }
 
 /**** new ***/
 .pineAppleParent{
     padding-top: 10px;
-    background-color:rgb(4, 83, 67);
+    background-color:rgb(255, 255, 255);
     padding-bottom:10px;
 }
 .pineAppleParent h3{
     font-size:24px;
-     color: rgb(5, 230, 204);
+     color: rgb(34, 34, 34);
      margin-left:10px;
      margin-right:10px;
      margin-top:10px;
-    background-color: rgb(6, 165, 133);
+    
 
 }
 .pineAppleParent p{
@@ -115,7 +117,7 @@ footer {
 label{display:inline-block; width:30%; margin-top:1%;text-transform: uppercase;}
 textarea{margin-top:10px;width:50%;margin-left:2%;}
 input{margin-left:2%;width:50%;}
-fieldset{width:75%;color:#302e2e;margin:0 auto;margin-top:2%;border:none;font-size:14px;text-transform: uppercase;}
+fieldset{width:35%;color:#302e2e;margin:0 auto;margin-top:2%;border:none;font-size:14px;text-transform: uppercase;}
 select{width:50%;}
 #submitPlant{width:auto;margin-top:10px;}
 .plant-collect h3{padding:5px;text-align: center; font-size:24px;color:rgb(191, 147, 189);}

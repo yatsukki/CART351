@@ -1,6 +1,8 @@
 from flask import Flask, render_template,request,redirect,url_for
 app = Flask(__name__)
 
+app.secret_key = 'BAD_SECRET_KEY'
+
 @app.route("/pineappleA")
 def pineAppleA():
 
@@ -31,25 +33,19 @@ def index():
                                         
                         )
 
-@app.route("/register")
+@app.route("/register",methods = ['POST', 'GET'])
 def register():
-     return render_template("register.html")
+    # app.logger.info(request.form["f_name"])
+    # app.logger.info(request.form["l_name"])
+    # app.logger.info(request.form["p_word"])
+    # app.logger.info(request.form["phone"])
+    # app.logger.info(request.form["email_name"])
+    return render_template("register.html")
 
-@app.route("/cat/<kitty>")
-def cat(kitty):
-    last_letter = kitty[-1]
-    newName = kitty + "y"
-    if last_letter != "y":
-        return f"Your new name is {newName}"
-    return f"Hello, {kitty}!the last letter of the kitty name is {last_letter}"
+ 
 
-    
-    
-
-@app.route("/reg_thank_you",methods = ['POST', 'GET'])
+@app.route("/reg_thank_you")
 def reg_thank_you():
-    app.logger.info(request.form["f_name"])
-    app.logger.info(request.form["l_name"])
     return render_template("thank_you_reg.html")
 
 

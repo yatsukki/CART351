@@ -47,7 +47,8 @@ def t2():
 @app.route("/getSearchCriteria_adv")
 def getSearchCriteria_adv():
  #fill me in :
-#  return render_template("t2.html",images=encodedImageLinks)
+ 
+ return render_template("t2.html",images=encodedImageLinks)
     pass
 #*************************************************
 

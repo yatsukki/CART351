@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+    <section class = "mainSection">
+    <div class= "formContainer">
+<!--form done using more current tags... -->
+
+<!-- group the related elements in a form -->
+<form action = "/getSearchCriteria" method = "get">
+<h3>WELCOME! PLEASE REGISTER BELOW </h3>
+<fieldset>
+ <p>
+    <label>NASA API SEARCH CRITERIA</label>
+    <input id="searchCriteria" type="text" size="24" maxlength = "40" name = "search" required> 
+</p>
+
+<p>
+    
+<p>
+
+ <p>
+    <label></label>
+    <input id = "searchButton" type = "submit" name = "submit" value = "submit search" id =buttonS />
+</p>
+ </fieldset>
+</form>
+</div>
+<div class="imageContainer">
+    <strong>Image description :</strong>
+    <p>{{ description }}</p>
+    <img src="{{ imgPath }}" alt="{{ description }}" class="stupidImage" />
+</div>
+</section>
+{% endblock %} 

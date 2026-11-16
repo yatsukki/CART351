@@ -24,13 +24,20 @@ def index():
 
 @app.route ("/scammed")
 def scammed():
-    # check if user exists inside session
-    if "user" in session and "password" in session:
-        user = session["user"]
-        password = session["password"]
-        return f"<h1>Hello {user}!! you've been scammed lmao we know that your password is {password}, send us $5 billion dollars or we leak your info</h1>"
-    else:
+    # variables to fetch user and password
+
+    user = session.get("user")
+    password = session.get("password")
+    # check if user and password exists inside session
+    if not user or not password:
+        
         return redirect(url_for("login"))
+        
+    else:
+        return render_template("scammed.html",user = session["user"],
+        password = session["password"] )
+
+  
 
 
 app.run(debug = True)

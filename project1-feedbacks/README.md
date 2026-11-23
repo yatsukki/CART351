@@ -25,7 +25,7 @@ I don't quite remember if that was already implemented but a giving the users an
 
 I'm suggesting this because I remember someone mentioning whatever word appears the most should fetch for more points, but I think this puts early users at a disadvantage.
 
-Constellation of strangers (Yelena's project)
+## Constellation of strangers (Yelena's project)
 
 #### Description:
 This website lets its users write down their emotions and displays everyone's emotion on a board. The user can choose a certain emotion before writing down their thoughts (e.g. happy, sad, angry, etc.). Each users' prompts would be posted as a singular dot with a color depending on the chosen emotion and each sharing the same emotions would be linked to each other through a line, revealing a constellation.

@@ -13,7 +13,7 @@ I think the most impressive thing about this whole project was the nlp structure
 
 
 
-## BEN PROJECT:
+## Cloud reading (Ben's project)
 
 #### Description:
 This project works as a small game that generates an array of clouds and lets visiting users say what the shape of said cloud reminds them of. The other users can also view what people thought the shape of the cloud reminded them of.
